@@ -9,6 +9,3 @@ members = [
     "picky-signtool",
     "ffi",
 ]
-
-[patch.crates-io]
-backtrace = { git = "https://github.com/Devolutions/backtrace-rs", branch = "wayk" }
