@@ -30,7 +30,7 @@ hex = "0.4.3"
 thiserror = "1.0.30"
 unicase = "2.6.0"
 rand = { version = "0.8.5", optional = true }
-tokio = { version = "1.17.0", features = ["fs"]}
+tokio = { version = "1.18.5", features = ["fs"]}
 futures = "0.3.21"
 
 [dev-dependencies]

@@ -1035,7 +1035,7 @@ checksum = "7fcd999463524c52659517fe2cea98493cfe485d10565e7b0fb07dbba7ad2753"
 dependencies = [
  "cfg-if 1.0.0",
  "libc",
- "wasi",
+ "wasi 0.10.0+wasi-snapshot-preview1",
 ]
 
 [[package]]
@@ -1082,7 +1082,7 @@ dependencies = [
  "http",
  "indexmap",
  "slab",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "tokio-util 0.6.9",
  "tracing",
 ]
@@ -1239,7 +1239,7 @@ dependencies = [
  "itoa 0.4.8",
  "pin-project-lite 0.2.7",
  "socket2 0.4.4",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "tower-service",
  "tracing",
  "want",
@@ -1254,7 +1254,7 @@ dependencies = [
  "bytes 1.1.0",
  "hyper 0.14.15",
  "native-tls",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "tokio-native-tls",
 ]
 
@@ -1615,14 +1615,15 @@ dependencies = [
 
 [[package]]
 name = "mio"
-version = "0.8.0"
+version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ba272f85fa0b41fc91872be579b3bbe0f56b792aa361a380eb669469f68dafb2"
+checksum = "52da4364ffb0e4fe33a9841a98a3f3014fb964045ce4f7a45a398243c8d6b0c9"
 dependencies = [
  "libc",
  "log",
  "miow 0.3.7",
  "ntapi",
+ "wasi 0.11.0+wasi-snapshot-preview1",
  "winapi 0.3.9",
 ]
 
@@ -1706,7 +1707,7 @@ dependencies = [
  "strsim 0.10.0",
  "take_mut",
  "thiserror",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "tokio-rustls",
  "tokio-util 0.6.9",
  "trust-dns-proto",
@@ -2245,7 +2246,7 @@ dependencies = [
  "serde_yaml",
  "thiserror",
  "time 0.3.9",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "tokio-test",
  "unicase",
 ]
@@ -2586,7 +2587,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_urlencoded",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "tokio-native-tls",
  "url",
  "wasm-bindgen",
@@ -3156,7 +3157,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6db9e6914ab8b1ae1c260a4ae7a49b6c5611b40328a735b21862567685e73255"
 dependencies = [
  "libc",
- "wasi",
+ "wasi 0.10.0+wasi-snapshot-preview1",
  "winapi 0.3.9",
 ]
 
@@ -3221,14 +3222,14 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "1.17.0"
+version = "1.18.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2af73ac49756f3f7c01172e34a23e5d0216f6c32333757c2c61feb2bbff5a5ee"
+checksum = "0e050c618355082ae5a89ec63bbf897225d5ffe84c7c4e036874e4d185a5044e"
 dependencies = [
  "bytes 1.1.0",
  "libc",
  "memchr",
- "mio 0.8.0",
+ "mio 0.8.2",
  "num_cpus",
  "pin-project-lite 0.2.7",
  "socket2 0.4.4",
@@ -3265,7 +3266,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f7d995660bd2b7f8c1568414c1126076c13fbb725c40112dc0120b78eb9b717b"
 dependencies = [
  "native-tls",
- "tokio 1.17.0",
+ "tokio 1.18.5",
 ]
 
 [[package]]
@@ -3275,7 +3276,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bc6844de72e57df1980054b38be3a9f4702aba4858be64dd700181a8a6d0e1b6"
 dependencies = [
  "rustls",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "webpki",
 ]
 
@@ -3287,7 +3288,7 @@ checksum = "50145484efff8818b5ccd256697f36863f587da82cf8b409c53adf1e840798e3"
 dependencies = [
  "futures-core",
  "pin-project-lite 0.2.7",
- "tokio 1.17.0",
+ "tokio 1.18.5",
 ]
 
 [[package]]
@@ -3299,7 +3300,7 @@ dependencies = [
  "async-stream",
  "bytes 1.1.0",
  "futures-core",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "tokio-stream",
 ]
 
@@ -3328,7 +3329,7 @@ dependencies = [
  "futures-sink",
  "log",
  "pin-project-lite 0.2.7",
- "tokio 1.17.0",
+ "tokio 1.18.5",
 ]
 
 [[package]]
@@ -3404,7 +3405,7 @@ dependencies = [
  "smallvec",
  "thiserror",
  "tinyvec",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "url",
 ]
 
@@ -3424,7 +3425,7 @@ dependencies = [
  "resolv-conf",
  "smallvec",
  "thiserror",
- "tokio 1.17.0",
+ "tokio 1.18.5",
  "trust-dns-proto",
 ]
 
@@ -3613,6 +3614,12 @@ name = "wasi"
 version = "0.10.0+wasi-snapshot-preview1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1a143597ca7c7793eff794def352d41792a93c481eb1042423ff7ff72ba2c31f"
+
+[[package]]
+name = "wasi"
+version = "0.11.0+wasi-snapshot-preview1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 
 [[package]]
 name = "wasm-bindgen"
